@@ -13,6 +13,11 @@
 		A6492D61259735C7005B0AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6492D60259735C7005B0AFB /* Preview Assets.xcassets */; };
 		A6492D6C259735C7005B0AFB /* SwiftUI_CustomTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6492D6B259735C7005B0AFB /* SwiftUI_CustomTabBarTests.swift */; };
 		A6492D77259735C7005B0AFB /* SwiftUI_CustomTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6492D76259735C7005B0AFB /* SwiftUI_CustomTabBarUITests.swift */; };
+		A6492D8925973AAE005B0AFB /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6492D8825973AAE005B0AFB /* TabBar.swift */; };
+		A6492D9525973C24005B0AFB /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6492D9425973C24005B0AFB /* TabButton.swift */; };
+		A6492D9A25976562005B0AFB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6492D9925976562005B0AFB /* Home.swift */; };
+		A64BCEB32598392E003343E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BCEB22598392E003343E7 /* Item.swift */; };
+		A64BCEB825983C16003343E7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BCEB725983C16003343E7 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		A6492D72259735C7005B0AFB /* SwiftUI_CustomTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_CustomTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6492D76259735C7005B0AFB /* SwiftUI_CustomTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CustomTabBarUITests.swift; sourceTree = "<group>"; };
 		A6492D78259735C7005B0AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6492D8825973AAE005B0AFB /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		A6492D9425973C24005B0AFB /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		A6492D9925976562005B0AFB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A64BCEB22598392E003343E7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A64BCEB725983C16003343E7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = ../../../../../CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 		A6492D58259735C2005B0AFB /* SwiftUI_CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				A6492D8D25973AB2005B0AFB /* Model */,
+				A6492D8725973A96005B0AFB /* View */,
 				A6492D59259735C2005B0AFB /* SwiftUI_CustomTabBarApp.swift */,
 				A6492D5B259735C2005B0AFB /* ContentView.swift */,
 				A6492D5D259735C7005B0AFB /* Assets.xcassets */,
@@ -128,6 +140,25 @@
 				A6492D78259735C7005B0AFB /* Info.plist */,
 			);
 			path = SwiftUI_CustomTabBarUITests;
+			sourceTree = "<group>";
+		};
+		A6492D8725973A96005B0AFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6492D8825973AAE005B0AFB /* TabBar.swift */,
+				A6492D9925976562005B0AFB /* Home.swift */,
+				A6492D9425973C24005B0AFB /* TabButton.swift */,
+				A64BCEB725983C16003343E7 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6492D8D25973AB2005B0AFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A64BCEB22598392E003343E7 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64BCEB825983C16003343E7 /* CardView.swift in Sources */,
+				A6492D8925973AAE005B0AFB /* TabBar.swift in Sources */,
+				A6492D9525973C24005B0AFB /* TabButton.swift in Sources */,
+				A6492D9A25976562005B0AFB /* Home.swift in Sources */,
 				A6492D5C259735C2005B0AFB /* ContentView.swift in Sources */,
+				A64BCEB32598392E003343E7 /* Item.swift in Sources */,
 				A6492D5A259735C2005B0AFB /* SwiftUI_CustomTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
